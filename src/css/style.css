@@ -4,6 +4,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    transition: 0.5s ease-in-out;
 }
 
 .calculator{
@@ -20,6 +22,7 @@ main{
 }
 
 .calculator .input{
+    background-color: white;
     border-radius: 10px;
     border: none;
     width: 100%;
@@ -37,7 +40,6 @@ main{
     font-weight: 700;
     border-radius: 10px;
     border: none;
-    background-color: white;
     margin: 3px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
@@ -52,8 +54,16 @@ main{
     background: none;
     border: none;
     cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 
 .icon img{
     width: 50px;
+}
+
+.active{
+    background-color: rgb(71, 71, 71);
+    color: white;
 }
